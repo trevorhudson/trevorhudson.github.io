@@ -1,0 +1,109 @@
+* {
+    font: "Helvetica";
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-content: right;
+    }
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 1px
+}
+
+nav li {
+    padding: 0px 5px;
+    list-style: none;
+}
+
+ header a {
+    font-weight: lighter;
+    font-size: 10pt;
+    text-transform: uppercase;
+
+}
+
+#contact a {
+    font-size: 7pt;
+}
+
+#splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+} 
+#splash a {
+    font-size: 50pt;
+}
+
+a:hover {
+    color: blue;
+}
+
+#portrait {
+    display: flex;
+    justify-content: center;
+}
+
+#portrait img {
+    max-width: 150px;
+    min-width: 50px;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: solid;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    text-transform: lowercase;
+}
+
+#content {
+    font-size: 15pt;
+    margin-bottom: 20px;
+}
+#content h2 {
+    border-bottom: 1px solid grey ; 
+}
+#content p {
+    text-align: justify;
+    text-justify: newspaper;
+    font-weight: 300;
+}
+#resume {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#current_page {
+font-weight: 500;
+}
