@@ -8,8 +8,9 @@
 #container {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    flex-wrap: nowrap;
     margin: 10px;
+    min-height: 500px;
 }
 
 header {
@@ -61,44 +62,33 @@ a:hover {
     color: blue;
 }
 
-#portrait {
-    display: flex;
-    justify-content: center;
-}
 
-#portrait img {
+img#portrait {
     max-width: 150px;
     min-width: 50px;
     border-radius: 50%;
     margin: 10px 0;
     border: solid;
+    align-self: center;
 }
 
 section {
     display: flex;
+    align-self: center;
     flex-direction: column;
-    align-items: center;
+    max-width: 600px;
 }
 
-#content {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 500px;
-    text-transform: lowercase;
+section h2 {
+    text-transform:lowercase;
 }
 
-#content {
-    font-size: 15pt;
-    margin-bottom: 20px;
-}
-#content h2 {
-    border-bottom: 1px solid grey ; 
-}
-#content p {
+section p {
     text-align: justify;
-    text-justify: newspaper;
+    text-justify: auto;
     font-weight: 300;
 }
+
 #resume {
     font-style: italic;
     font-weight: bolder;
