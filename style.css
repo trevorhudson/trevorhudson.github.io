@@ -6,11 +6,8 @@
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 10px;
     min-height: 500px;
+    
 }
 
 header {
@@ -18,11 +15,12 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    align-content: right;
-    }
+header a {
+    font-weight: lighter;
+    font-size: 10pt;
+    text-transform: uppercase;
+
+}
 
 nav ul {
     display: flex;
@@ -36,57 +34,53 @@ nav li {
     list-style: none;
 }
 
- header a {
-    font-weight: lighter;
-    font-size: 10pt;
-    text-transform: uppercase;
-
-}
-
 #contact a {
     font-size: 7pt;
 }
 
-#splash {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-
-} 
-#splash a {
-    font-size: 50pt;
-}
 
 a:hover {
     color: blue;
 }
 
 
-img#portrait {
-    max-width: 150px;
-    min-width: 50px;
-    border-radius: 50%;
-    margin: 10px 0;
-    border: solid;
-    align-self: center;
-}
-
 section {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
     max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-section h2 {
-    text-transform:lowercase;
+
+#splash {
+    font-size: 50pt;
+    text-transform: lowercase;
+    align-self: center;
+    margin: 25% 0;
+
+}
+
+section h1 {
+    text-transform:uppercase;
+    font-weight: 500;
+    text-align: left;    
 }
 
 section p {
+    font-size: 20pt;
     text-align: justify;
     text-justify: auto;
     font-weight: 300;
+    text-transform: lowercase;
+}
+
+img#portrait {
+    max-width: 200px;
+    width: 75%;
+    border-radius: 50%;
+    border: solid;
+    margin: 0 auto
 }
 
 #resume {
