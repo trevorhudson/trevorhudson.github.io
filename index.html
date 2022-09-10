@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevor Hudson</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <style>
+        #splash_page{
+            visibility: hidden;
+        }
+
+    </style>
 </head>
 <body>
     <div id = "container">
-        <header>
+        <header id = "splash_page">
             <div id = "title">
                 <a href="index.html">TREVOR HUDSON</a>
             </div>
@@ -20,7 +27,7 @@
                     <li><a href="projects.html">Projects</a></li>
                 </ul>
                 <ul id = "contact">
-                    <li><a href="mailto:trevor.c.hudson@gmail.com">email</a></li>
+                    <li><a href="" id="email">email</a></li>
                     <li><a href="https://github.com/trevorhudson">github</a></li>  
                 </ul>
             </nav>
@@ -28,7 +35,9 @@
         </header>
 
         <section>
-            <h1 id = "splash"><a href="about.html">hello, world.</a></h1>
+            <a href="about.html" id = "splash">
+                <p>trevor <b>hudson</b> </p>            
+            </a>
         </section>
 
     </div>
