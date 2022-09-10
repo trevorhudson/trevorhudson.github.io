@@ -90,10 +90,10 @@ section h1 {
 section p {
     font-size: 1.25em;
     text-align: left;
-    font-weight: 300;
+    font-weight:lighter;
     text-transform: lowercase;
 }
-
+w
 #about #portrait {
     max-width: 100%;
     flex: 0 1 auto;
