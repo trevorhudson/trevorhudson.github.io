@@ -6,10 +6,6 @@
     font-size: 1em;
 }
 
-#container {
-
-}
-
 header {
     margin: 10px;
     display: flex;
@@ -73,18 +69,19 @@ section {
 
 div#about {
     display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-items:auto;
+
 }
 
 
 section h1 {
     text-transform:uppercase;
     font-weight: 500;
-    text-align: left; 
-    font-size: 2em;   
+    text-align: left;
+    font-size: 2em;
 }
 
 section p {
@@ -93,20 +90,23 @@ section p {
     font-weight:lighter;
     text-transform: lowercase;
 }
-w
+
 #about #portrait {
     max-width: 100%;
+    min-width: 75px;
+    min-height: 75px;
+    border: 3px solid;
     flex: 0 1 auto;
-    min-width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    border: 1px solid;
-    order: 1;
+    margin-bottom: 10px;
 }
 
 #about div {
+
+padding-right: 10px;
 flex: 1;
-margin-right: 5px;
+align-self: flex-start;
+margin: 0;
+
 }
 
 #resume {
@@ -116,4 +116,8 @@ margin-right: 5px;
 
 #current_page {
 font-weight: 600;
+}
+
+#about p {
+margin: 0;
 }
